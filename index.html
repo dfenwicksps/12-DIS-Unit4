@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEXUS Unit 4</title>
+<meta name="description" content="A transit-map mission game for QCAA Digital Solutions Unit 4: exchanging data securely, data exchange requirements and prototyping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;700&family=Overpass:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/nexus.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="brand" type="button" id="brand" aria-label="NEXUS home: network map">
+    <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+      <circle cx="17" cy="17" r="15" fill="none" stroke="#ffc21a" stroke-width="4"/>
+      <path d="M6 22 L13 12 L21 22 L28 12" fill="none" stroke="#f4f7f9" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>
+      <span class="brand-name">NEXUS</span><br>
+      <span class="brand-sub">Digital Solutions · Unit 4</span>
+    </span>
+  </button>
+  <span class="spacer"></span>
+  <nav class="topbar-btns" aria-label="Game menu">
+    <button class="sign-btn" type="button" id="btn-notes">Field notes</button>
+    <button class="sign-btn" type="button" id="btn-about">How to play</button>
+    <button class="sign-btn" type="button" id="btn-sound" aria-pressed="true">Sound on</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section id="map-view" aria-labelledby="map-title"></section>
+  <section id="mission-view" hidden></section>
+</main>
+
+<dialog id="dlg-notes" aria-labelledby="notes-title"></dialog>
+<dialog id="dlg-about" aria-labelledby="about-title"></dialog>
+
+<script src="js/sha256.js"></script>
+<script src="js/core.js"></script>
+<script src="js/widgets.js"></script>
+<script src="js/missions/01-packets.js"></script>
+<script src="js/missions/02-formats.js"></script>
+<script src="js/missions/03-cipher.js"></script>
+<script src="js/missions/04-keys.js"></script>
+<script src="js/missions/05-hash.js"></script>
+<script src="js/missions/06-api.js"></script>
+<script src="js/missions/07-privacy.js"></script>
+<script src="js/missions/08-impacts.js"></script>
+<script src="js/missions/09-usability.js"></script>
+<script src="js/missions/10-algorithms.js"></script>
+<script src="js/missions/11-trace.js"></script>
+<script src="js/missions/12-core.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
